@@ -1,45 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="CalculadoraPoligonos.Cuadrado">
+  <Class Name="UNA.Poligonos.Cuadrado">
     <Position X="5.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAEIAAAAAAAAAA=</HashCode>
       <FileName>UNA\Poligonos\Cuadrado.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CalculadoraPoligonos.Figura">
+  <Class Name="UNA.Poligonos.Figura">
     <Position X="3" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAA=</HashCode>
       <FileName>UNA\Poligonos\Figura.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CalculadoraPoligonos.Rectangulo">
+  <Class Name="UNA.Poligonos.Rectangulo">
     <Position X="3" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAABAAIAAAAAAAQAA=</HashCode>
       <FileName>UNA\Poligonos\Rectangulo.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CalculadoraPoligonos.Triangulo">
+  <Class Name="UNA.Poligonos.Triangulo">
     <Position X="5.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAEAAAAAAAAAAACAAACAABAAIAAAAAAAQAA=</HashCode>
       <FileName>UNA\Poligonos\Triangulo.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CalculadoraPoligonos.Pentagono">
+  <Class Name="UNA.Poligonos.Pentagono">
     <Position X="0.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAEIAAAAAAAAAA=</HashCode>
       <FileName>UNA\Poligonos\Pentagono.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CalculadoraPoligonos.Ciculo">
+  <Class Name="UNA.Poligonos.Circulo">
     <Position X="0.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAIAAAAAAAAAA=</HashCode>
-      <FileName>UNA\Poligonos\Ciculo.cs</FileName>
+      <FileName>UNA\Poligonos\Circulo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

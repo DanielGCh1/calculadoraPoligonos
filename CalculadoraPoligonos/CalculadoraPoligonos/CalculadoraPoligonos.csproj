@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UNA\Poligonos\Ciculo.cs" />
+    <Compile Include="UNA\Poligonos\Circulo.cs" />
     <Compile Include="UNA\Poligonos\Cuadrado.cs" />
     <Compile Include="UNA\Poligonos\Figura.cs" />
     <Compile Include="CalculadoraPoligonos.cs">

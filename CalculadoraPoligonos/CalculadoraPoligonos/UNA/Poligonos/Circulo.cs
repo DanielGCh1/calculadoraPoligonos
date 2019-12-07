@@ -5,7 +5,7 @@ using System.Text;
 
 namespace UNA.Poligonos
 {
-    public class Ciculo : Figura
+    public class Circulo : Figura
     {
         public double Radio
         {
