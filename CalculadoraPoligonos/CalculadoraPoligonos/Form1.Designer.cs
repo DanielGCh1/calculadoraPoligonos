@@ -38,7 +38,6 @@
             this.butCalPerimetro = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabFiguras.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabFiguras
@@ -55,7 +54,6 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -126,7 +124,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(40, 172);
+            this.textBox1.Location = new System.Drawing.Point(288, 54);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(313, 20);
             this.textBox1.TabIndex = 0;
@@ -136,6 +134,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 645);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.butCalPerimetro);
             this.Controls.Add(this.butCalArea);
             this.Controls.Add(this.label1);
@@ -144,8 +143,6 @@
             this.Text = "Calculadora de poligonos";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabFiguras.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
