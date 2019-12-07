@@ -55,8 +55,8 @@
             this.textBoxRadioCirculo = new System.Windows.Forms.TextBox();
             this.labRadioCirculo = new System.Windows.Forms.Label();
             this.labTitulo = new System.Windows.Forms.Label();
-            this.butCalcularArea = new System.Windows.Forms.Button();
-            this.butCalcularPerimetro = new System.Windows.Forms.Button();
+            this.ButtCalcularArea = new System.Windows.Forms.Button();
+            this.ButtCalcularPerimetro = new System.Windows.Forms.Button();
             this.tabFiguras.SuspendLayout();
             this.tabTriangulo.SuspendLayout();
             this.tabCuadrado.SuspendLayout();
@@ -77,6 +77,8 @@
             this.tabFiguras.SelectedIndex = 0;
             this.tabFiguras.Size = new System.Drawing.Size(501, 383);
             this.tabFiguras.TabIndex = 0;
+            this.tabFiguras.SelectedIndexChanged += new System.EventHandler(this.tabFiguras_SelectedIndexChanged);
+            this.tabFiguras.Selected += new System.Windows.Forms.TabControlEventHandler(this.TabFiguras);
             // 
             // tabTriangulo
             // 
@@ -104,6 +106,7 @@
             this.textBoxAlturaTriangulo.Name = "textBoxAlturaTriangulo";
             this.textBoxAlturaTriangulo.Size = new System.Drawing.Size(100, 20);
             this.textBoxAlturaTriangulo.TabIndex = 13;
+            this.textBoxAlturaTriangulo.Leave += new System.EventHandler(this.MeterAlturaTriangulo);
             // 
             // textBoxBaseTriangulo
             // 
@@ -111,6 +114,7 @@
             this.textBoxBaseTriangulo.Name = "textBoxBaseTriangulo";
             this.textBoxBaseTriangulo.Size = new System.Drawing.Size(100, 20);
             this.textBoxBaseTriangulo.TabIndex = 12;
+            this.textBoxBaseTriangulo.Leave += new System.EventHandler(this.MeterBaseTriangulo);
             // 
             // labAlturaTriangulo
             // 
@@ -136,6 +140,7 @@
             this.textBoxLado2.Name = "textBoxLado2";
             this.textBoxLado2.Size = new System.Drawing.Size(100, 20);
             this.textBoxLado2.TabIndex = 5;
+            this.textBoxLado2.Leave += new System.EventHandler(this.MeterLado2Triangulo);
             // 
             // textBoxLado3
             // 
@@ -143,6 +148,7 @@
             this.textBoxLado3.Name = "textBoxLado3";
             this.textBoxLado3.Size = new System.Drawing.Size(100, 20);
             this.textBoxLado3.TabIndex = 4;
+            this.textBoxLado3.Leave += new System.EventHandler(this.MeterLado3Triangulo);
             // 
             // textBoxLado1
             // 
@@ -150,6 +156,7 @@
             this.textBoxLado1.Name = "textBoxLado1";
             this.textBoxLado1.Size = new System.Drawing.Size(100, 20);
             this.textBoxLado1.TabIndex = 3;
+            this.textBoxLado1.Leave += new System.EventHandler(this.MeterLado1Triangulo);
             // 
             // labLado3
             // 
@@ -185,7 +192,7 @@
             this.tabCuadrado.Location = new System.Drawing.Point(4, 22);
             this.tabCuadrado.Name = "tabCuadrado";
             this.tabCuadrado.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCuadrado.Size = new System.Drawing.Size(493, 437);
+            this.tabCuadrado.Size = new System.Drawing.Size(493, 357);
             this.tabCuadrado.TabIndex = 1;
             this.tabCuadrado.Text = "Cuadrado";
             this.tabCuadrado.UseVisualStyleBackColor = true;
@@ -215,7 +222,7 @@
             this.tabRectangulo.Location = new System.Drawing.Point(4, 22);
             this.tabRectangulo.Name = "tabRectangulo";
             this.tabRectangulo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRectangulo.Size = new System.Drawing.Size(493, 437);
+            this.tabRectangulo.Size = new System.Drawing.Size(493, 357);
             this.tabRectangulo.TabIndex = 2;
             this.tabRectangulo.Text = "Rectangulo";
             this.tabRectangulo.UseVisualStyleBackColor = true;
@@ -259,7 +266,7 @@
             this.tabPentagono.Location = new System.Drawing.Point(4, 22);
             this.tabPentagono.Name = "tabPentagono";
             this.tabPentagono.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPentagono.Size = new System.Drawing.Size(493, 437);
+            this.tabPentagono.Size = new System.Drawing.Size(493, 357);
             this.tabPentagono.TabIndex = 3;
             this.tabPentagono.Text = "Pentagono";
             this.tabPentagono.UseVisualStyleBackColor = true;
@@ -318,31 +325,33 @@
             this.labTitulo.TabIndex = 1;
             this.labTitulo.Text = "Calculadora de Poligonos";
             // 
-            // butCalcularArea
+            // ButtCalcularArea
             // 
-            this.butCalcularArea.Location = new System.Drawing.Point(435, 489);
-            this.butCalcularArea.Name = "butCalcularArea";
-            this.butCalcularArea.Size = new System.Drawing.Size(131, 23);
-            this.butCalcularArea.TabIndex = 2;
-            this.butCalcularArea.Text = "Calcular Area";
-            this.butCalcularArea.UseVisualStyleBackColor = true;
+            this.ButtCalcularArea.Location = new System.Drawing.Point(435, 489);
+            this.ButtCalcularArea.Name = "ButtCalcularArea";
+            this.ButtCalcularArea.Size = new System.Drawing.Size(131, 23);
+            this.ButtCalcularArea.TabIndex = 2;
+            this.ButtCalcularArea.Text = "Calcular Area";
+            this.ButtCalcularArea.UseVisualStyleBackColor = true;
+            this.ButtCalcularArea.Click += new System.EventHandler(this.ButtCalcularArea_Click);
             // 
-            // butCalcularPerimetro
+            // ButtCalcularPerimetro
             // 
-            this.butCalcularPerimetro.Location = new System.Drawing.Point(265, 489);
-            this.butCalcularPerimetro.Name = "butCalcularPerimetro";
-            this.butCalcularPerimetro.Size = new System.Drawing.Size(124, 23);
-            this.butCalcularPerimetro.TabIndex = 3;
-            this.butCalcularPerimetro.Text = "Calcular Perimetro";
-            this.butCalcularPerimetro.UseVisualStyleBackColor = true;
+            this.ButtCalcularPerimetro.Location = new System.Drawing.Point(265, 489);
+            this.ButtCalcularPerimetro.Name = "ButtCalcularPerimetro";
+            this.ButtCalcularPerimetro.Size = new System.Drawing.Size(124, 23);
+            this.ButtCalcularPerimetro.TabIndex = 3;
+            this.ButtCalcularPerimetro.Text = "Calcular Perimetro";
+            this.ButtCalcularPerimetro.UseVisualStyleBackColor = true;
+            this.ButtCalcularPerimetro.Click += new System.EventHandler(this.ButtCalcularPerimetro_Click);
             // 
             // CalculadoraPoligonos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 537);
-            this.Controls.Add(this.butCalcularPerimetro);
-            this.Controls.Add(this.butCalcularArea);
+            this.Controls.Add(this.ButtCalcularPerimetro);
+            this.Controls.Add(this.ButtCalcularArea);
             this.Controls.Add(this.labTitulo);
             this.Controls.Add(this.tabFiguras);
             this.Name = "CalculadoraPoligonos";
@@ -371,8 +380,8 @@
         private System.Windows.Forms.Label labTitulo;
         private System.Windows.Forms.TabPage tabRectangulo;
         private System.Windows.Forms.TabPage tabPentagono;
-        private System.Windows.Forms.Button butCalcularArea;
-        private System.Windows.Forms.Button butCalcularPerimetro;
+        private System.Windows.Forms.Button ButtCalcularArea;
+        private System.Windows.Forms.Button ButtCalcularPerimetro;
         private System.Windows.Forms.TabPage tabCirculo;
         private System.Windows.Forms.Label labLado3;
         private System.Windows.Forms.Label labLado2;
