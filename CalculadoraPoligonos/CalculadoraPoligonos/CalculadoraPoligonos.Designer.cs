@@ -203,6 +203,7 @@
             this.textBoxLadoCuadrado.Name = "textBoxLadoCuadrado";
             this.textBoxLadoCuadrado.Size = new System.Drawing.Size(100, 20);
             this.textBoxLadoCuadrado.TabIndex = 5;
+            this.textBoxLadoCuadrado.Leave += new System.EventHandler(this.MeterLadoCuadrado);
             // 
             // labLadoCuadrado
             // 
@@ -233,6 +234,7 @@
             this.textBoxAlturaRectangulo.Name = "textBoxAlturaRectangulo";
             this.textBoxAlturaRectangulo.Size = new System.Drawing.Size(100, 20);
             this.textBoxAlturaRectangulo.TabIndex = 9;
+            this.textBoxAlturaRectangulo.Leave += new System.EventHandler(this.MeterAlturaRectangulo);
             // 
             // textBoxBaseRectangulo
             // 
@@ -240,6 +242,7 @@
             this.textBoxBaseRectangulo.Name = "textBoxBaseRectangulo";
             this.textBoxBaseRectangulo.Size = new System.Drawing.Size(100, 20);
             this.textBoxBaseRectangulo.TabIndex = 8;
+            this.textBoxBaseRectangulo.Leave += new System.EventHandler(this.MeterBaseRectangulo);
             // 
             // labAlturaRectangulo
             // 
@@ -277,15 +280,16 @@
             this.textBoxLadoPentagono.Name = "textBoxLadoPentagono";
             this.textBoxLadoPentagono.Size = new System.Drawing.Size(100, 20);
             this.textBoxLadoPentagono.TabIndex = 7;
+            this.textBoxLadoPentagono.Leave += new System.EventHandler(this.MeterLadoPentagono);
             // 
             // labLadoPentagono
             // 
             this.labLadoPentagono.AutoSize = true;
             this.labLadoPentagono.Location = new System.Drawing.Point(45, 49);
             this.labLadoPentagono.Name = "labLadoPentagono";
-            this.labLadoPentagono.Size = new System.Drawing.Size(83, 13);
+            this.labLadoPentagono.Size = new System.Drawing.Size(79, 13);
             this.labLadoPentagono.TabIndex = 6;
-            this.labLadoPentagono.Text = "Ingrese un lado:";
+            this.labLadoPentagono.Text = "Ingrese el lado:";
             // 
             // tabCirculo
             // 
@@ -305,15 +309,16 @@
             this.textBoxRadioCirculo.Name = "textBoxRadioCirculo";
             this.textBoxRadioCirculo.Size = new System.Drawing.Size(100, 20);
             this.textBoxRadioCirculo.TabIndex = 9;
+            this.textBoxRadioCirculo.Leave += new System.EventHandler(this.MeterElRadioCirculo);
             // 
             // labRadioCirculo
             // 
             this.labRadioCirculo.AutoSize = true;
             this.labRadioCirculo.Location = new System.Drawing.Point(40, 45);
             this.labRadioCirculo.Name = "labRadioCirculo";
-            this.labRadioCirculo.Size = new System.Drawing.Size(83, 13);
+            this.labRadioCirculo.Size = new System.Drawing.Size(82, 13);
             this.labRadioCirculo.TabIndex = 8;
-            this.labRadioCirculo.Text = "Ingrese un lado:";
+            this.labRadioCirculo.Text = "Ingrese el radio:";
             // 
             // labTitulo
             // 

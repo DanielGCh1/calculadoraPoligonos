@@ -9,20 +9,18 @@ namespace UNA.Poligonos
     {
         public double Radio
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public override double CalcularArea()
         {
-            return System.Math.PI * (this.Radio * 2);
+            return System.Math.PI * (System.Math.Pow(this.Radio, 2));
         }
 
         public override double CalcularPerimetro()
         {
-            return 2 * System.Math.PI * this.Radio;
+            return (2*System.Math.PI )* this.Radio;
         }
     }
 }

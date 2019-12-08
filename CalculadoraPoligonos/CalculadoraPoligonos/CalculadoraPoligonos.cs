@@ -16,6 +16,7 @@ namespace CalculadoraPoligonos
     public partial class CalculadoraPoligonos : Form
     {
         private Figura figuraSelecionada;
+        private string figuraTipo;
 
 
 
@@ -23,19 +24,20 @@ namespace CalculadoraPoligonos
         {
             InitializeComponent();
             figuraSelecionada = new Triangulo();
+            figuraTipo = "triangulo";
         }
 
         private void ButtCalcularPerimetro_Click(object sender, EventArgs e)
         {
             
-            DialogResult dialogResult = MessageBox.Show($"El Perimetro de la figura es {figuraSelecionada.CalcularPerimetro()}");
+            DialogResult dialogResult = MessageBox.Show($"El perimetro de la figura {figuraTipo} es {figuraSelecionada.CalcularPerimetro()}");
            
         }
 
         private void ButtCalcularArea_Click(object sender, EventArgs e)
         {
 
-            DialogResult dialogResult = MessageBox.Show($"El Perimetro de la figura es {figuraSelecionada.CalcularArea()}");
+            DialogResult dialogResult = MessageBox.Show($"El area de la figura {figuraTipo} es {figuraSelecionada.CalcularArea()}");
 
         }
 
@@ -48,22 +50,27 @@ namespace CalculadoraPoligonos
         {
             if (tabFiguras.SelectedIndex == 0) {
                 figuraSelecionada = new Triangulo();
+                figuraTipo = "triangulo";
             }
             if (tabFiguras.SelectedIndex == 1)
             {
                 figuraSelecionada = new Cuadrado();
+                figuraTipo = "cuadrado";
             }
             if (tabFiguras.SelectedIndex == 2)
             {
                 figuraSelecionada = new Rectangulo();
+                figuraTipo = "rectangulo";
             }
             if (tabFiguras.SelectedIndex == 3)
             {
                 figuraSelecionada = new Pentagono();
+                figuraTipo = "pentagono";
             }
             if (tabFiguras.SelectedIndex == 4)
             {
                 figuraSelecionada = new Circulo();
+                figuraTipo = "circulo";
             }
         }
 
@@ -96,6 +103,36 @@ namespace CalculadoraPoligonos
         {
             Triangulo triangulo = (Triangulo)figuraSelecionada;
             triangulo.Altura = Convert.ToDouble(textBoxAlturaTriangulo.Text);
+        }
+
+        private void MeterLadoCuadrado(object sender, EventArgs e)
+        {
+            Cuadrado cuadrado = (Cuadrado)figuraSelecionada;
+            cuadrado.Lado = Convert.ToDouble(textBoxLadoCuadrado.Text);
+        }
+
+        private void MeterBaseRectangulo(object sender, EventArgs e)
+        {
+            Rectangulo rectangulo = (Rectangulo)figuraSelecionada;
+            rectangulo.Base = Convert.ToDouble(textBoxBaseRectangulo.Text);
+        }
+
+        private void MeterAlturaRectangulo(object sender, EventArgs e)
+        {
+            Rectangulo rectangulo = (Rectangulo)figuraSelecionada;
+            rectangulo.Altura = Convert.ToDouble(textBoxAlturaRectangulo.Text);
+        }
+
+        private void MeterLadoPentagono(object sender, EventArgs e)
+        {
+            Pentagono pentagono = (Pentagono)figuraSelecionada;
+            pentagono.Lado = Convert.ToDouble(textBoxLadoPentagono.Text);
+        }
+
+        private void MeterElRadioCirculo(object sender, EventArgs e)
+        {
+            Circulo circulo = (Circulo)figuraSelecionada;
+            circulo.Radio = Convert.ToDouble(textBoxRadioCirculo.Text);
         }
     }
 }

@@ -9,18 +9,14 @@ namespace UNA.Poligonos
     {
         public double Base
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public double Altura
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public override double CalcularArea()

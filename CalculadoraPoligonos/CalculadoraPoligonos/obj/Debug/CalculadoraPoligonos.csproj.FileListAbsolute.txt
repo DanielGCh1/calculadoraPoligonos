@@ -12,7 +12,6 @@ C:\Users\dgcha\Documents\GitHub\calculadoraPoligonos\CalculadoraPoligonos\Calcul
 C:\Users\dgcha\Documents\GitHub\calculadoraPoligonos\CalculadoraPoligonos\CalculadoraPoligonos\bin\Debug\CalculadoraPoligonos.exe
 C:\Users\dgcha\Documents\GitHub\calculadoraPoligonos\CalculadoraPoligonos\CalculadoraPoligonos\bin\Debug\CalculadoraPoligonos.pdb
 C:\Users\dgcha\Documents\GitHub\calculadoraPoligonos\CalculadoraPoligonos\CalculadoraPoligonos\obj\Debug\CalculadoraPoligonos.csprojAssemblyReference.cache
-C:\Users\dgcha\Documents\GitHub\calculadoraPoligonos\CalculadoraPoligonos\CalculadoraPoligonos\obj\Debug\CalculadoraPoligonos.Form1.resources
 C:\Users\dgcha\Documents\GitHub\calculadoraPoligonos\CalculadoraPoligonos\CalculadoraPoligonos\obj\Debug\CalculadoraPoligonos.Properties.Resources.resources
 C:\Users\dgcha\Documents\GitHub\calculadoraPoligonos\CalculadoraPoligonos\CalculadoraPoligonos\obj\Debug\CalculadoraPoligonos.csproj.GenerateResource.cache
 C:\Users\dgcha\Documents\GitHub\calculadoraPoligonos\CalculadoraPoligonos\CalculadoraPoligonos\obj\Debug\CalculadoraPoligonos.exe
@@ -26,3 +25,4 @@ C:\Users\Daniel\Documents\GitHub\calculadoraPoligonos\CalculadoraPoligonos\Calcu
 C:\Users\Daniel\Documents\GitHub\calculadoraPoligonos\CalculadoraPoligonos\CalculadoraPoligonos\obj\Debug\CalculadoraPoligonos.exe
 C:\Users\Daniel\Documents\GitHub\calculadoraPoligonos\CalculadoraPoligonos\CalculadoraPoligonos\obj\Debug\CalculadoraPoligonos.pdb
 C:\Users\Daniel\Documents\GitHub\calculadoraPoligonos\CalculadoraPoligonos\CalculadoraPoligonos\obj\Debug\CalculadoraPoligonos.CalculadoraPoligonos.resources
+C:\Users\dgcha\Documents\GitHub\calculadoraPoligonos\CalculadoraPoligonos\CalculadoraPoligonos\obj\Debug\CalculadoraPoligonos.CalculadoraPoligonos.resources

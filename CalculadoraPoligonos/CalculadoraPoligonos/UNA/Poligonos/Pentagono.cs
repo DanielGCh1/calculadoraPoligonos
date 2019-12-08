@@ -9,10 +9,8 @@ namespace UNA.Poligonos
     {
         public double Lado
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public override double CalcularArea()
